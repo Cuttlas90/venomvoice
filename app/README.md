@@ -1,7 +1,7 @@
 
 <br />
 <div align="center">
-<img src="/logo512.png" alt="Logo" width="80" height="80">
+<img src="public/logo512.png" alt="Logo" width="80" height="80">
 </a>
 
 <h3 align="center">Venom Voice</h3>
@@ -12,7 +12,7 @@ Using venom voice, you can record your voice, encrypt it, and send it over venom
 
 <br />
 
-<a href="https://venomvoice.cuttlas.app">View Demo</a>
+<a href="https://venomvoice.cuttlas.app" target="_blank">View Demo</a>
 
 <details>
 
@@ -28,18 +28,17 @@ Using venom voice, you can record your voice, encrypt it, and send it over venom
 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+![Screenshot 2023-06-09 150848](https://github.com/shahedmoez/venomvoice/assets/92023968/b766beac-2a64-453b-ab19-7f162a0732a6)
 
 Using venom voice, you can record your voice, encrypt it, and send it over venom blockchain to your desired recipient. receiver can decrypt the message using their own wallet and listen to your message
 
 ####  In this app user can:
 
-* Record Voice in hicompress codec
-* encript Voice by venom wallet
-* create a transaction and send amount and encripted voice to resepient address.
-* access play list of sent and recived encripted voice 
-* decript recived or send voice useing venom wallet and lisen to it.
-
+* Record Voice in spesefic codec
+* Encript Voice using  venom wallet
+* Create a transaction and send amount and encripted voice to resepient address.
+* Access play list of sent and recived encripted voice
+* Decrypt recived or sent voice useing venom wallet and lisen to it.
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ## Built With
@@ -71,7 +70,7 @@ npm install npm@latest -g
 
 ```sh
 
-git clone https://github.com/your_username_/Project-Name.git
+git clone https://github.com/Cuttlas90/venomvoice
 
 ```
 
@@ -89,6 +88,6 @@ npm install
 
 cuttlas team - [cuttlas](info@cuttlas.app)
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Project Link: [Venom Voice](https://github.com/Cuttlas90/venomvoice)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
