@@ -1,1 +1,1 @@
-export const baseUrl = "http://46.249.58.100:800";
+export const baseUrl = "https://venomb.cuttlas.app";
