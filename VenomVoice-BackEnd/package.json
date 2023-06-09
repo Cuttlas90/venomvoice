@@ -1,0 +1,25 @@
+{
+  "name": "server",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "dotenv": "^16.0.3",
+    "everscale-inpage-provider": "^0.3.61",
+    "everscale-standalone-client": "^2.1.19",
+    "express": "^4.18.2",
+    "http-errors": "~1.6.3",
+    "jade": "^1.9.2",
+    "jsonwebtoken": "^9.0.0",
+    "morgan": "~1.9.1",
+    "node-pre-gyp": "^0.14.0",
+    "pg": "^8.7.1",
+    "sequelize": "^6.31.1",
+    "tedious": "^6.4.0",
+    "uuid": "^8.3.2"
+  }
+}
