@@ -1,0 +1,180 @@
+.walletModal {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.9px);
+    -webkit-backdrop-filter: blur(6.9px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+}
+
+.walletModalmain {
+    border: 1px solid var(--bs-gray-300);
+    height: max-content;
+    max-width: 600px;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: white;
+}
+
+.walletModalHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.6em 0.8em;
+}
+
+.walletmodalStatus {
+    background: linear-gradient(115.78deg,#1c6e63,#3f46a9);
+    padding: 0.6em 0.8em;
+}
+
+.status {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.statusConect {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.statusConect span {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px solid white;
+    color: white;
+    font-size: 2em;
+}
+
+.statusConect span img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.selectWallet {
+    border: 1px solid var(--bs-gray-300);
+    border-radius: 12px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0.8em 0;
+    padding: 0.2em 0.5em;
+}
+
+.selectWallet img {
+    display: block;
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+.connectWallet {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.connectWallet span{
+    width: 80px;
+    height: 80px;
+    background: white;
+    display: inline-block;
+    border: 1px solid var(--bs-gray-300);
+    border-radius: 50%;
+    box-shadow: -2px 3px 7px #00ff;
+    overflow: hidden;
+}
+.connectWallet span img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    vertical-align: middle;
+    text-align: center;
+}
+.statusInfo{
+    color: white;
+    padding: 2em;
+}
+.statusInfo p{
+    margin: 0.5em 0 0 0;
+}
+.statusInfo i{
+    cursor: pointer;
+}
+.actionWallet{
+    width: 150px;
+    height: 150px;
+}
+.actionWallet img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.actionWallet~h6{
+    color: white;
+}
+.actionProps {
+    width: 100%;
+}
+.actionProps tr td{
+    vertical-align: middle;
+}
+.actionProps tr td:nth-child(2n+1){
+    width: 30%;
+}
+.actionProps tr td:nth-child(2n){
+    width: 70%;
+}
+.actionProps .value{
+    width: 40px;
+    text-align: center;
+    border-radius: 6px;
+    border: 1px solid var(--bs-gray-600);
+    margin-right: 0.5em;
+}
+.actionProps .address{
+    width: 100%;
+    text-align: center;
+    border-radius: 6px;
+    border: 1px solid var(--bs-gray-600);
+    padding: 0.5em ;
+}
+.requaredFild input:invalid{
+    border-color: red;
+}
+.circle360{
+    animation: circle360 1s linear infinite;
+}
+@keyframes circle360 {
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.alerEncript{
+    position: fixed;
+    z-index: 10000;
+    max-width: 575px;
+    
+}

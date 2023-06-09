@@ -1,0 +1,179 @@
+:root{
+    --bs-success-rgb :21,204,151;
+    --bs-primary-rgb :255,255,255
+}
+.appContioner {
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    padding: 0.5rem;
+    display: flex;
+    position: relative;
+    gap: 1.5rem;
+    z-index: 1;
+    overflow: hidden;
+    background-color: #0d0d0d;
+}
+
+.appContioner::before {
+    z-index: -1;
+    position: absolute;
+    right: -59px;
+    bottom: -178px;
+    display: block;
+    width: 500px;
+    height: 500px;
+    content: "";
+    background: url(https://venom.foundation/_nuxt/header-big.caf69b04.webp);
+    opacity: 1;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-width: 75%;
+    min-height: 75%;
+}
+.appContioner::after {
+    z-index: -1;
+    position: absolute;
+    right: -59px;
+    bottom: -178px;
+    display: block;
+    width: 500px;
+    height: 500px;
+    content: "";
+    background: url(https://venom.foundation/_nuxt/header-big.caf69b04.webp);
+    opacity: 1;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-width: 75%;
+    min-height: 75%;
+}
+
+.recordPage {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.playListPage {
+    width: 100%;
+    flex-shrink: 1;
+}
+
+@media screen and (min-width: 768px) {
+    .recordPage {
+        width: max-content !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .recordPage {
+        transform: translateX(-100vw);
+        transition: all 0.3s ease-in;
+    }
+
+    .recordPage.activePage {
+        transform: translateX(0);
+    }
+
+    .playListPage {
+        transform: translateX(0);
+        flex-shrink: 0;
+        transition: all 0.3s ease-in;
+    }
+
+    .playListPage.activePage {
+        transform: translateX(calc(-100vw - 0.75em));
+    }
+}
+
+.donate {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.donate button {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 15px;
+    padding: 0;
+    position: relative;
+    border: none;
+    color: var(--bs-light);
+    background: none;
+}
+
+.donate button img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    animation: donate 2s ease-in-out 5s infinite;
+}
+
+.donate button::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@keyframes donate {
+    0% {
+        filter: drop-shadow(0 0 6px #892cdc);
+        opacity: 1;
+    }
+
+    100% {
+        filter: drop-shadow(0 0 100px #892cdc);
+        opacity: 0.1;
+    }
+}
+
+.walletconnect-modal__base {
+    max-width: 400px !important;
+    top: 53% !important;
+}
+
+#ModalWelcom {
+    position: fixed;
+    top: -100vh;
+    margin: 0 auto;
+    display: block;
+    animation: welcom 0.5s linear .5s forwards;
+    z-index: 9001;
+}
+
+@keyframes welcom {
+    0% {
+        top: -100vh
+    }
+
+    100% {
+        top: 80px
+    }
+}
+
+.wellcomDontShow {
+    width: 100%;
+    border-bottom: 1px solid var(--borderGray);
+    padding: 0.5em 1em;
+    display: flex;
+    align-items: center;
+}
+
+.wellcomDontShow input {
+    width: 15px !important;
+    height: 15px !important;
+    position: unset !important;
+    opacity: 1 !important;
+    margin-right: 0.5em;
+}
+.modalwelcom{
+    border: #892cdc solid 1px ;
+}
